@@ -18,10 +18,9 @@
   <header class="site-header">
     <a class="site-title" href="/">{{ site.title }}</a>
     <nav>
-      <a href="/archive/">Archive</a>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
-      <a href="/feed.xml">Feed</a>
+      {%- for link in navigation %}
+      <a href="{{ link.url }}"{% if page.url | inSection(link) %} aria-current="{{ 'page' if page.url == link.url else 'true' }}"{% endif %}>{{ link.title }}</a>
+      {%- endfor %}
     </nav>
   </header>
 

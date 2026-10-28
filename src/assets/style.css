@@ -48,7 +48,10 @@ h1, h2, h3, h4, .site-title, nav {
   margin-bottom: 2rem;
 }
 .site-title { font-size: 1.35rem; font-weight: 700; color: var(--fg); text-decoration: none; }
-.site-header nav { display: flex; gap: 1rem; font-size: 0.95rem; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; font-size: 0.95rem; }
+.site-header nav a[aria-current] { color: var(--fg); text-decoration-thickness: 2px; }
+
+.subpages { margin-top: 2.5rem; border-top: 1px solid var(--rule); }
 
 .post-meta, .comment-meta, .syndication, .archive-list time, .site-footer {
   color: var(--muted);

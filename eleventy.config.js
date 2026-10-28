@@ -27,6 +27,18 @@ export default function (eleventyConfig) {
     collectionApi.getFilteredByGlob("src/posts/**/*.md"),
   );
 
+  eleventyConfig.addCollection("pages", (collectionApi) =>
+    collectionApi.getFilteredByGlob("src/pages/**/*.md").sort((a, b) => a.data.title.localeCompare(b.data.title)),
+  );
+
+  // Pages directly below url, e.g. /ant/dependencies/ for /ant/.
+  eleventyConfig.addFilter("childrenOf", (pages, url) =>
+    pages.filter((p) => p.url.startsWith(url) && p.url.slice(url.length).match(/^[^/]+\/$/)),
+  );
+  eleventyConfig.addFilter("pageAt", (pages, url) => pages.find((p) => p.url === url));
+  eleventyConfig.addFilter("inSection", (url, link) =>
+    Boolean(url) && [link.url, ...(link.sections ?? [])].some((prefix) => url.startsWith(prefix)),
+  );
   eleventyConfig.addFilter("readableDate", (date) =>
     new Intl.DateTimeFormat("en-AU", { dateStyle: "long", timeZone: DISPLAY_TIME_ZONE }).format(new Date(date)),
   );

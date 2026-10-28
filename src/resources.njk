@@ -1,0 +1,16 @@
+---
+layout: layouts/page.njk
+title: Resources
+permalink: /resources/
+---
+{%- for link in navigation %}{% if link.url == page.url %}
+{%- for sectionUrl in link.sections %}
+{%- set section = collections.pages | pageAt(sectionUrl) %}
+<h2><a href="{{ section.url }}">{{ section.data.title }}</a></h2>
+<ul>
+  {%- for subpage in collections.pages | childrenOf(section.url) %}
+  <li><a href="{{ subpage.url }}">{{ subpage.data.title }}</a></li>
+  {%- endfor %}
+</ul>
+{%- endfor %}
+{%- endif %}{% endfor %}
