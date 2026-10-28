@@ -13,26 +13,26 @@ This extra testing code provides tremendous advantages in any development projec
 
 The anti-patterns are:
 
-- [Misuse of Assertions](#Misuse_of_Assertions)
-    - [Manual Assertions](#Manual_Assertions)
-    - [Multiple Assertions](#Multiple_Assertions)
-    - [Redundant Assertions](#Redundant_Assertions)
-    - [Using the Wrong Assert](#Using_the_Wrong_Assert)
-- [Superficial Test Coverage](#Superficial_Test_Coverage)
-- [Overly Complex Tests](#Overly_Complex_Tests)
-- [External Dependencies](#External_Dependencies)
-- [Catching Unexpected Exceptions](#Catching_Unexpected_Exceptions)
-- [Mixing Production and Test Code](#Mixing_Production_and_Test_Code)
-- [No Unit Tests](#No_Unit_Tests)
+- [Misuse of Assertions](#misuse-of-assertions)
+    - [Manual Assertions](#manual-assertions)
+    - [Multiple Assertions](#multiple-assertions)
+    - [Redundant Assertions](#redundant-assertions)
+    - [Using the Wrong Assert](#using-the-wrong-assert)
+- [Superficial Test Coverage](#superficial-test-coverage)
+- [Overly Complex Tests](#overly-complex-tests)
+- [External Dependencies](#external-dependencies)
+- [Catching Unexpected Exceptions](#catching-unexpected-exceptions)
+- [Mixing Production and Test Code](#mixing-production-and-test-code)
+- [No Unit Tests](#no-unit-tests)
 
 ### Misuse of Assertions
 
 The basic building block of JUnit tests is the _assertion_ - a boolean expression which, if false, indicates an error. All JUnit test cases are subclassed from the `[Assert](http://www.junit.org/junit/javadoc/3.8.1/junit/framework/Assert.html)` class. It is expected that individual `test` methods will call one of the many different methods starting with `assert` to specify the intended result of the test. However, there are many different ways to misuse the intended purpose of these assertions, including the following:
 
-- [Manual Assertions](#Manual_Assertions)
-- [Multiple Assertions](#Multiple_Assertions)
-- [Redundant Assertions](#Redundant_Assertions)
-- [Using the Wrong Assert](#Using_the_Wrong_Assert)
+- [Manual Assertions](#manual-assertions)
+- [Multiple Assertions](#multiple-assertions)
+- [Redundant Assertions](#redundant-assertions)
+- [Using the Wrong Assert](#using-the-wrong-assert)
 
 #### Manual Assertions
 
@@ -123,7 +123,7 @@ This particular aphorism in the FAQ has caused a large amount of discussion. The
 
 ##### Problem Description
 
-Redundant Assertions are extra calls to an `assert` method where the condition being tested is a hard coded `true` value. Usually, this is intended to show the _correct_ code path through the test method, but in reality it clutters the method with excess verbiage. In cases where there are no other assertions, this anti-pattern degenerates into the [Manual Assertions](#Manual_Assertions) anti-pattern.
+Redundant Assertions are extra calls to an `assert` method where the condition being tested is a hard coded `true` value. Usually, this is intended to show the _correct_ code path through the test method, but in reality it clutters the method with excess verbiage. In cases where there are no other assertions, this anti-pattern degenerates into the [Manual Assertions](#manual-assertions) anti-pattern.
 
 ```
 public void testSomething() {

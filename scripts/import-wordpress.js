@@ -90,6 +90,8 @@ function cleanBody(body, imageBase) {
         return `](${target}${fragment ? `#${fragment}` : ""}`;
       })
       .replace(/\]\(images\//g, `](${imageBase ?? ""}images/`)
+      // Old <a name="Some_Heading"> anchors are gone: point at the generated heading id.
+      .replace(/\]\(#([A-Za-z0-9]+(?:_[A-Za-z0-9]+)+)\)/g, (_, anchor) => `](#${anchor.toLowerCase().replaceAll("_", "-")})`)
   );
 }
 

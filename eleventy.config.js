@@ -1,11 +1,26 @@
 import fs from "node:fs";
 import path from "node:path";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import markdownItAnchor from "markdown-it-anchor";
 
 // Post dates are WordPress local times stored as UTC, so display them in UTC.
 const DISPLAY_TIME_ZONE = "UTC";
 
+// Heading ids as WordPress generated them ("Setting Strategy & Goals" ->
+// "setting-strategy-goals"), so imported tables of contents keep working.
+function headingSlug(text) {
+  return text
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/[\s-]+/g, "-");
+}
+
 export default function (eleventyConfig) {
+  eleventyConfig.amendLibrary("md", (md) => md.use(markdownItAnchor, { slugify: headingSlug }));
+
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
   eleventyConfig.addCollection("posts", (collectionApi) =>
