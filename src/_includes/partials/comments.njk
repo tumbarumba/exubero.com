@@ -1,0 +1,16 @@
+{%- if comments %}
+<section class="comments">
+  <h2>Archived comments</h2>
+  <ol>
+    {%- for comment in comments %}
+    <li class="p-comment h-cite" id="comment-{{ comment.id }}">
+      <p class="comment-meta">
+        <span class="p-author h-card">{% if comment.url %}<a class="p-name u-url" href="{{ comment.url }}" rel="nofollow ugc">{{ comment.author }}</a>{% else %}<span class="p-name">{{ comment.author }}</span>{% endif %}</span>
+        · <time class="dt-published" datetime="{{ comment.date | isoDate }}">{{ comment.date | readableDate }}</time>
+      </p>
+      <div class="p-content">{{ comment.content | safe }}</div>
+    </li>
+    {%- endfor %}
+  </ol>
+</section>
+{%- endif %}

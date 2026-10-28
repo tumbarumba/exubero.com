@@ -1,0 +1,7 @@
+node_modules/
+_site/
+.cache/
+.idea/
+# WordPress export: contains commenter emails and IP addresses
+import/
+.wrangler/

@@ -1,0 +1,25 @@
+{
+  "name": "exubero.com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "preview": "eleventy && wrangler dev",
+    "deploy": "eleventy && wrangler deploy",
+    "import:convert": "wordpress-export-to-markdown --wizard=false --input=import/export.xml --output=import/markdown --post-folders=true --date-folders=year --prefix-date=true --save-images=all --include-time=true --frontmatter-fields=title,date,id,slug,type,categories,tags,coverImage,excerpt,draft",
+    "import": "node scripts/import-wordpress.js import/export.xml import/markdown"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7",
+    "@11ty/eleventy-fetch": "^5.1.3",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "fast-xml-parser": "^5.11.2",
+    "gray-matter": "^4.0.3",
+    "wordpress-export-to-markdown": "^3.0.6",
+    "wrangler": "^4.154.0"
+  }
+}

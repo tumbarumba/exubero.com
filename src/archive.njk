@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+title: Archive
+permalink: /archive/
+---
+<h1>Archive</h1>
+<p>Categories:
+  {% for slug, name in categoryNames %}{% if (collections.posts | inCategory(slug)).length %}<a href="/category/{{ slug }}/">{{ name }}</a> {% endif %}{% endfor %}
+</p>
+{%- for group in collections.posts | reverse | groupByYear %}
+<h2>{{ group.year }}</h2>
+<ul class="archive-list">
+  {%- for post in group.posts %}
+  <li><time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time> <a href="{{ post.url }}">{{ post.data.title }}</a></li>
+  {%- endfor %}
+</ul>
+{%- endfor %}

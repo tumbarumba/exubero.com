@@ -1,0 +1,28 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+---
+# Static rules first: Cloudflare counts every rule after the first splat or
+# placeholder against its limit of 100 dynamic rules.
+
+# Legacy WordPress URLs
+/joe/                       /                      301
+/joe/feed/                  /feed.xml              301
+/feed                       /feed.xml              301
+/feed/                      /feed.xml              301
+/comments/feed/             /feed.xml              301
+
+# Pages from the pre-WordPress static site
+/contact.html               /contact/              301
+/ant/dependencies.html      /ant/dependencies/     301
+/junit/anti-patterns.html   /junit/anti-patterns/  301
+
+# Posts from the old self-hosted blog at /joe/
+{%- for from, to in legacyRedirects %}
+{{ from }} {{ to }} 301
+{%- endfor %}
+
+# Dynamic rules
+/category/:slug/feed/       /category/:slug/       301
+/tag/*                      /archive/              301
+/author/*                   /about/                301

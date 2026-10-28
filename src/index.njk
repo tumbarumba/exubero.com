@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+  reverse: true
+permalink: "{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber + 1 }}/{% else %}/{% endif %}"
+---
+<div class="h-feed">
+  {%- for post in posts %}
+  <article class="h-entry post-summary">
+    <h2 class="p-name"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+    <p class="post-meta"><time class="dt-published" datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time></p>
+    <div class="e-content">{{ post.content | safe }}</div>
+  </article>
+  {%- endfor %}
+</div>
+
+<nav class="pagination">
+  {%- if pagination.href.next %}<a href="{{ pagination.href.next }}">← Older posts</a>{% endif %}
+  {%- if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Newer posts →</a>{% endif %}
+</nav>

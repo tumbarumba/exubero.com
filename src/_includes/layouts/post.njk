@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+---
+<article class="h-entry">
+  <header>
+    <h1 class="p-name">{{ title }}</h1>
+    <p class="post-meta">
+      <a class="u-url" href="{{ page.url }}"><time class="dt-published" datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time></a>
+      <span class="p-author h-card" hidden><a class="p-name u-url" href="{{ site.url }}/">{{ site.author.name }}</a></span>
+      {%- if categories %}
+      · {% for slug in categories %}<a class="p-category" href="/category/{{ slug }}/">{{ categoryNames[slug] or slug }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+      {%- endif %}
+    </p>
+  </header>
+
+  {%- if coverImage %}
+  <img class="cover-image" src="{{ coverImage }}" alt="">
+  {%- endif %}
+
+  <div class="e-content">
+    {{ content | safe }}
+  </div>
+
+  {%- if syndication %}
+  <p class="syndication">
+    Also on:
+    {% for link in syndication %}<a class="u-syndication" href="{{ link }}">{{ link | replace("https://", "") }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+  </p>
+  {%- endif %}
+</article>
+
+{% include "partials/webmentions.njk" %}
+{% include "partials/comments.njk" %}

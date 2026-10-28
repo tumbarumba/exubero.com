@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ site.language }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title and page.url != "/" %}{{ title }} – {% endif %}{{ site.title }}</title>
+  {%- if excerpt %}
+  <meta name="description" content="{{ excerpt }}">
+  {%- endif %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
+  <link rel="me" href="{{ site.mastodon.url }}">
+  <link rel="me" href="mailto:{{ site.author.email }}">
+  <link rel="webmention" href="https://webmention.io/{{ site.webmentionDomain }}/webmention">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="/">{{ site.title }}</a>
+    <nav>
+      <a href="/archive/">Archive</a>
+      <a href="/about/">About</a>
+      <a href="/contact/">Contact</a>
+      <a href="/feed.xml">Feed</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer h-card">
+    <p>
+      © 2003–{{ build.year }}
+      <a class="p-name u-url u-uid" rel="me" href="{{ site.url }}/">{{ site.author.name }}</a>
+      · <a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      · <a rel="me" href="{{ site.mastodon.url }}">{{ site.mastodon.handle }}</a>
+    </p>
+  </footer>
+</body>
+</html>

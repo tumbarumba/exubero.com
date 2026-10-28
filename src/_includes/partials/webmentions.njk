@@ -1,0 +1,30 @@
+{%- set mentions = webmentions | mentionsFor(page.url) %}
+{%- if mentions.length %}
+{%- set likes = mentions | mentionsOfType("like-of", "repost-of") %}
+{%- set replies = mentions | mentionsOfType("in-reply-to", "mention-of") %}
+<section class="webmentions">
+  <h2>Responses</h2>
+  {%- if likes.length %}
+  <p class="facepile">
+    {%- for like in likes %}
+    <a class="h-card" href="{{ like.author.url }}" title="{{ like.author.name }} {{ 'liked' if like['wm-property'] == 'like-of' else 'boosted' }} this">
+      <img src="{{ like.author.photo }}" alt="{{ like.author.name }}" width="32" height="32" loading="lazy">
+    </a>
+    {%- endfor %}
+  </p>
+  {%- endif %}
+  {%- if replies.length %}
+  <ol>
+    {%- for reply in replies %}
+    <li class="h-cite">
+      <p class="comment-meta">
+        <a class="p-author h-card" href="{{ reply.author.url }}">{{ reply.author.name }}</a>
+        · <a class="u-url" href="{{ reply.url }}"><time class="dt-published" datetime="{{ reply.published or reply['wm-received'] }}">{{ (reply.published or reply['wm-received']) | readableDate }}</time></a>
+      </p>
+      <div class="p-content">{{ reply.content.html | safe if reply.content.html else reply.content.text }}</div>
+    </li>
+    {%- endfor %}
+  </ol>
+  {%- endif %}
+</section>
+{%- endif %}

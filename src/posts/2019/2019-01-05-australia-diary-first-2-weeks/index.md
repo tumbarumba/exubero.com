@@ -1,0 +1,50 @@
+---
+title: 'Australia Diary: First 2 Weeks'
+date: 2019-01-05T22:11:30.000Z
+permalink: /2019/01/05/australia-diary-first-2-weeks/
+categories:
+  - general
+wordpressId: 5068
+---
+
+After living in England for the last 18 years, I finally returned to Oz with my wife and 2 youngest children 10 days ago. This is a bit of a public diary of the my personal happenings and observations (no tech content in this post - it will resume shortly)
+
+### The Flight
+
+The flight over was a disaster. It was one of the worst experiences I've had flying.
+
+We had booked flights with a transit stop over in San Francisco. This is the long way to go from London to Sydney (about 6 extra hours of flight time), but it was about £1000 cheaper. What we hadn't realised is that, unlike every other country we've transited through, the USA insists that you have a visa - even if you're not leaving the airport. The website where we booked the tickets hadn't mentioned this - we discovered this in the check-in queue. We were given some advice by the agent on how to quickly get an electronic visa (ESTA), though they did say it was marginal as to whether we would get it in time (they normally say order it at least 3 days in advance). We made it with 5 minutes to spare. Rushing through security, we were the last people to get onto the plane.  In hindsight, we did have one clue: the website wouldn't let us check in online. It would have been nice to get a clear indication of the problem, though.
+
+Our 3 year old son ended up developing quite a bad upper respiratory tract infection on the flight. I think it had been lying latent in his system before we boarded, but once we were on the flight, it kicked into overdrive. Coughing, temperature, and eventually throwing up (all over me, of course). We made it to San Francisco for a 5 hour stop over. The boy perked right up, and appeared to recover, so we thought we were OK for the next flight to Sydney. He hadn't, we were not. The second leg of the trip was worse than the first. Miserable for everyone involved (child, parents, neighbouring travellers, flight attendants). It was a huge relief to finally land in Sydney.
+
+### Jet Lagged in Sydney
+
+We stayed 3 nights in Sydney before heading to our new home in Canberra. I was planning to catch up with various friends at this time as we worked out the kinks in our sleeping patterns. What ended up happening: not much. We tracked down a doctor, who was able to diagnose the boy with a upper respiratory tract infection, and prescribed some antibiotics. After 2 days, there was no improvement, so we visited the same doctor again. As a precautionary measure, he ordered some chest x-rays. No problems spotted, but it was good to get the care and attention. Unfortunately, I hadn't been able to organise Medicare for the family yet, so I was out of pocket $200. At least it wasn't in the USA!
+
+While we were waiting for the boy to recover, my 6 year old daughter took it upon herself to learn skate. We'd given her a new set for her birthday a month ago, and so now the empty hotel at 4:30 am was the perfect place to perfect her balance as we trundled around the empty corridors and conference centre. My wife managed to catch the lurgy, and spent a miserable few days battling jet lag and illness.
+
+On our last night, we finally did catch up with some good friends: Bruce and sOL, along with their two kids. We'd booked a restaurant, but in the end the boy and the wife ended up too tired and ill to stay out with us, so they returned to our room, while the girl and I had a nice evening catching up.
+
+### Christmas in Canberra
+
+On the Saturday before Christmas, we finally drove to Canberra. It's a 3 hour drive. The girl asked a few times: "Why do we have to drive for so long?". My answer: "Australia is much bigger than Britain, things are much further apart".
+
+Arriving in Canberra, we went straight to the house of my brother and sister-in-law in [Dunlop](https://www.google.com.au/maps/place/Dunlop+ACT+2615/@-35.1948648,149.0114111,15z/data=!3m1!4b1!4m5!3m4!1s0x6b17abf5f8549aad:0x500ea6ea7695410!8m2!3d-35.195556!4d149.02!5m1!1e4). We stayed a few hours, and then went over to view the house we had rented in [Aranda](https://www.google.com.au/maps/place/Aranda+ACT+2614/@-35.2592915,149.0773635,15.77z/data=!4m5!3m4!1s0x6b17b29f87036b0d:0x500ea6ea7695590!8m2!3d-35.258333!4d149.08!5m1!1e4). I love this house. It's a relatively small 3 bedroom house, but it also has an outside garage that has been converted to a studio with an office, extra bedroom and bathroom. This is perfect for me, as I need to set up a home office for my job. The house in Aranda is very near a well respected school, and quite importantly, the local hipster coffee place: [Two Before Ten](http://twobeforeten.com.au/). It wouldn't look out of place in Shoreditch: It's very industrial chic, and the staff there all seem to have a fetish for tattoos and body piercings, and the coffee is very nice, too. There was a disappointing lack of full beards, though.
+
+Although our rented house in Aranda is very nice, it was completely unfurnished. We could not move in until we had at least purchased some beds. Before we could do that, we needed to set up local bank accounts to avoid paying international transfer fees on every transaction. In the interim, my sister-in-law had arranged for us to house-sit for a friend of hers who had gone on holiday, and needed someone to look after their cat. This house was in [Harrison](https://www.google.com.au/maps/place/Harrison+ACT+2914/@-35.1972368,149.1476509,15z/data=!3m1!4b1!4m5!3m4!1s0x6b1654a934bb400d:0x500ea6ea7695930!8m2!3d-35.1975!4d149.154444!5m1!1e4). Arriving there, the boy asked rather querulously "How many houses are we going to?".  When you're 3, it's all very confusing!
+
+Christmas was a joy. It was the biggest gathering of my family in a long time. My brother and sister-in-law hosted a large event, along with my mother, sister, brother-in-law, one of my nieces, two nephews, as well as a some other close family friends and partners. There had been plans for my aunt and uncle and some cousins to come along, too, but bad health kept them away in Wagga Wagga. It was fantastic to catch up with everyone, though at this stage I had succumbed to the sickness running through the family, so I wasn't fully engaged with everyone. Plenty of time to catch up, though.
+
+### Becoming Australian Again
+
+An interesting part of the last couple of weeks has been my interactions with the various institutions involved with living in Australia.
+
+Firstly, banking. I was able to set up a new account with the National Australia Bank (NAB) while I was still living in England. It was possible to transfer money into this account, but I would not be able to access it until I presented myself to a bank branch in Canberra with proof of ID. It was important to get the account set up quickly, because we wanted to avoid using our UK accounts, with all attract a fee for every overseas transaction. Initially, the bank suggested an appointment for the 2nd January. This was a bit late, so I asked for an earlier appointment on the 24th December. The appointment was relatively painless and the account was unlocked, but there were some unexpected quirks. Firstly, I was given a charge card, but it took a full day for to be activated. Secondly, it could only be used for shop purchases (no online shopping for you!). I had to request _another_ card which worked for online purchases. Thirdly, transfers seem to take a very long time - up to 3 business days sometimes. Transferring to another account in the same bank is roughly instant, but transferring to accounts in different banking institutions seems to be very slow. All in all, it was a slightly frustrating experience, although I will say that the online banking and mobile apps are better than any that I've seen in the UK so far.
+
+The next thing to do was register my family and I for [Medicare](https://en.wikipedia.org/wiki/Medicare_\(Australia\)), the universal healthcare system in Australia. We had to present ourselves to a medicare office with a filled in form, some ID, and proof that we had actually moved back to Australia (we took our house sale documents and our new rental agreement). I was expecting a bit of a nightmare on this one, but it turned out to be quite easy. We waited about 10 minutes before we were called. A lady tapped away at a computer for about 30 minutes as she navigated various systems. There were some slight complexities related to my ex-wife still being registered in the system, but these were soon fixed and we were issued with a number. Job done!
+
+The last thing we had to do was transfer our UK drivers licenses over to ACT licenses. Once again, we had to fill in a form and  provide proof of address (the rental agreement, again), and then we had to turn up to an [Access Canberra](https://www.accesscanberra.act.gov.au/app/answers/detail/a_id/1782/~/about-access-canberra) service centre. Arriving at the service centre, I was a bit disheartened to see a large number of people waiting. We took a ticket and filled in a form. One of the staff even came up and gave the kids some pencils and paper to colour in. In the end we only had to wait about 25 minutes, and then it was our turn. Once again, it seemed pretty straight forward. The man in the centre tapped away at the keyboard for about 20  minutes, took our photos, and 10 minutes later we had our shiny new licences. All in all, I've had much worse experiences with bureaucracy over the years.
+
+### Living in Canberra
+
+Canberra is awesome. Before I moved to my new home, I heard people complain that Canberra is boring. I don't see it. The shops, public infrastructure, museums, things to do with kids is incredible. I was surprised at the size and variety of the stores in the (many) different shopping centres, there's no lack of kids activities, and there's a lot of places to see. Perhaps I have a different perspective to a twenty-something party animal looking for a night out, but for the moment, I couldn't be happier with my new home.
